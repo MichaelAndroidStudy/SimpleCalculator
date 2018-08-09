@@ -20,6 +20,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:minWidth="20dp"
             android:orientation="vertical"
             android:layout_weight="10"
             android:weightSum="100">
@@ -65,7 +66,7 @@
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:fontFamily="sans-serif"
-                android:text="555"/>
+                android:text=""/>
             <!-- строка со вторым числом -->
             <TextView android:id="@+id/secondNumber"
                 android:layout_width="match_parent"
@@ -79,7 +80,7 @@
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:fontFamily="sans-serif"
-                android:text="222"/>
+                android:text=""/>
             <!-- результат мат. операции -->
             <TextView android:id="@+id/resultNumber"
                 android:layout_width="match_parent"
@@ -93,7 +94,7 @@
                 android:textStyle="bold"
                 android:textSize="26sp"
                 android:fontFamily="sans-serif"
-                android:text="777"/>
+                android:text=""/>
         </LinearLayout>
     </LinearLayout>
     <!-- GridLayout и TableLayout не заполняют кнопками всю ширину экрана
@@ -182,7 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
-                android:text="C" />
+                android:text="C"/>
             <Button
                 android:id="@+id/buttonResult"
                 android:layout_width="wrap_content"

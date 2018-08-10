@@ -130,6 +130,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void handleClicks(View view){
         needToUpdateText=false;
+        if(resultIsExist){
+            clean();
+        }
         switch (view.getId()) {
             case R.id.button0:
                 addDigitToOperand(ZERO);
@@ -296,6 +299,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(isSelect){
             operationSign.setText(sign);
             operationSelected=true;
+            if(firstOperand.equals(EMPTY_STRING)){
+                firstOperand=ZERO;
+                showNumbers();
+            }
             curentOperand=Operand.SECOND;
         }
         else {
